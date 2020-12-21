@@ -1,75 +1,87 @@
 syntax enable 
 
-set  nocompatible 
+set nocompatible
 set noerrorbells
-set tabstop=4 softtabstop=4
+set tabstop=4 softtabstop=4 
 set shiftwidth=4
-set expandtab 
+set expandtab
 set smartindent
 set nu
-set smartcase
+set smartcase 
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
-set undofile 
+set undofile
 set incsearch
 set relativenumber
 set encoding=utf-8
-
-"Automatically wrap text that extends beyond the screen lenght 
+"Automatically wrap text that extends beyond the screen lenght
 set wrap
 
 "For plug-ins to load correctly
 filetype plugin indent on
 
-"Dispaly bar
+"display bar
 set laststatus=2
 
-"Display options 
+"Display options
 set showmode
 set showcmd
 
 set colorcolumn =100
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-"Plug-ins------------------------------------------------------------
+"Plug-ins-------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox' "Theme
-Plug 'jremmen/vim-ripgrep' "shortcuts
-Plug 'tpope/vim-fugitive' "git 
-Plug 'mbbill/undotree' "Arbol de deshacer
-Plug 'preservim/nerdtree' "Arbol de Busqueda de archivos
-Plug 'scrooloose/syntastic' "Control de sintaxis 
-Plug 'christoomey/vim-tmux-navigator' "Complemento para  nerdtree
+Plug 'jremmen/vim-ripgrep'                  "shortcuts
+Plug 'tpope/vim-fugitive'                   "git 
+Plug 'preservim/nerdtree'                   "Arbol de Busqueda de archivos
+Plug 'scrooloose/syntastic'                 "Control de sintaxis 
+Plug 'christoomey/vim-tmux-navigator'       "Complemento para  nerdtree
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocompletado
-Plug 'vim-airline/vim-airline' "personalizar barra de vim 
-Plug 'mattn/emmet-vim' "estructura para html 
-Plug 'arcticicestudio/nord-vim' "Nord Theme 
+Plug 'vim-airline/vim-airline'              "personalizar barra de vim 
+Plug 'mattn/emmet-vim'                      "estructura para html 
+Plug 'vim-airline/vim-airline-themes'       "Airline themes
+"Customisation
+Plug 'mcchrish/nnn.vim'                     "Manager Files 
+Plug 'ap/vim-css-color'                     "Color in vim as css
+Plug 'ryanoasis/vim-devicons'               "Icons
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "Icons in nerdtree
+Plug 'yggdroot/indentline'                  "Interlineado
+Plug 'sainnhe/sonokai'                      "Theme
+Plug 'sainnhe/gruvbox-material'             "Theme
 call plug#end()
 
-"Themes-------------------------------------------------------------
-colorscheme gruvbox 
+"-------------------------------------------------------------------------------
+"Themes
+"-------------------------------------------------------------------------------
+
+set guifont =Agave\ Nerd\ Font\ Mono\ r
+"Funciones para las letras cursivas y negritas
 set bg=dark
-let g:gruvbox_transp_bg =v:true
-"Commands-----------------------------------------------------------
+let g:gruvbox_material_transparent_background = 1
+colorscheme gruvbox-material
+"Fondo Transparente
+
+"----------------------------------------------------------------------------
 "General Settings 
+"---------------------------------------------------------------------------
 
-let mapleader=" " "leader key
-let NERDTreeQuitOnOpen=1 "Quit nerdtree menu
+let mapleader=" "                   "leader key
+let NERDTreeQuitOnOpen=1            "Quit nerdtree menu
 
+"---------------------------------------------------------------------------`
 "shortcuts
+"---------------------------------------------------------------------------
 
 nmap <Leader>qf :NERDTreeFind<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>s :wq<CR>
 nmap <Leader>qm :CocSearch
-nmap <Leader>qj :Files<CR>
 nmap <Leader>t :term<CR>
-"Coc
-nmap <silent> ci <Plug>(coc-implementation)
-nmap <silent> cr <Plug>(coc-references)
-
+"---------------------------------------------------------------------------
 "Syntastic Settings
+"---------------------------------------------------------------------------
 
 set statusline+=#Warning#
 set statusline+={SyntasticStatuslineFlag()}
@@ -82,12 +94,15 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 inoremap jj <Esc>
+
+"---------------------------------------------------------------------------
+"Config Plugins 
+"---------------------------------------------------------------------------
+
 "python
 
 let g:syntastic_python_checkers = ['python']
-
 "Coc
-
 let g:coc_global_extension = ['coc-python', 'coc-java', 'coc-json', 'coc-go', 'coc-tsserver']
 
 "Use tab for trigger complemention with characters ahead and navigate,
@@ -111,7 +126,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <A-cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"))'']'')''))))))''Airline
 
-"let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 "Detallers 
 "customizar parentesis 
  
