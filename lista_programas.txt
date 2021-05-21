@@ -1,0 +1,48 @@
+Software
+nvim 5.0
+telescope
+Mysql
+Couchdb
+Postgres
+https://www.postgresql.org/message-id/CAGYT1XR%3Dxp9CHxanNHN-oHwRZ9c7bz1xokN3qvOXSygChm2VrA%40mail.gmail.com
+Carga masiva de datos
+fish
+telegram
+flameshot
+toolbox
+Brave
+Packet Tracer
+Discord
+Teams
+DB browser for sqlite
+Notion
+Jupyter
+visual  studio code
+zoom
+wire shark
+droidcam
+vlc
+spotify
+
+
+To do
+Python
+SQLAlchemy
+pyMysql
+pandas
+request
+plotly
+dash
+jupyter
+
+LARAVEL
+Compososer
+
+Nodejs
+NPm
+
+Carga de archivos
+practicas
+
+.zsh
+
