@@ -1,39 +1,46 @@
 Software
-*nvim 5.0
-*telescope
-*Mysql
-*Couchdb
-*Postgres
+nvim 5.0
+telescope
+Mysql
+Couchdb
+Postgres
 https://www.postgresql.org/message-id/CAGYT1XR%3Dxp9CHxanNHN-oHwRZ9c7bz1xokN3qvOXSygChm2VrA%40mail.gmail.com
-*Carga masiva de datos
-*fish
+Carga masiva de datos
+fish
 telegram
-*flameshot
+flameshot
 toolbox
-*Brave
-*Packet Tracer
+Brave
+Packet Tracer
 Discord
 Teams: Web 
 DB browser for sqlite
 Notion
 Jupyter
-*visual  studio code
-*zoom
-*wire shark
+visual  studio code
+zoom
+wire shark
 droidcam
-*vlc
+vlc
 spotify
 
 
+rofi -combi-modi window,drun  -show combi -icon-theme "Papirus" -show-icons
+https://github.com/craftzdog/dotfiles-public
+https://github.com/fish-shell/fish-shell
+https://blog.craftz.dog/my-vim-setup-to-speed-up-javascript-coding-for-my-electron-and-react-native-apps-842b9759dc1
+
 To do
-*Python
-*SQLAlchemy
-*pyMysql
-*pandas
-*request
-*plotly
-*dash
+Python
+SQLAlchemy
+pyMysql
+pandas
+request
+plotly
+dash
 jupyter
+django
+django import-export
 
 LARAVEL
 *Compososer
