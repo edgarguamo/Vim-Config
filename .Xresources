@@ -1,0 +1,19 @@
+!--------------------------------------
+! Rofi Setup
+! -------------------------------------
+
+rofi.color-enabled: true
+rofi.color-window: #393939, #393939, #268bd2
+rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
+rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
+
+rofi.width: 55
+rofi.lines: 7
+rofi.columns: 1
+rofi.font: Monospace 15
+rofi.bw: 0
+rofi.padding: 30
+rofi.eh: 1
+!rofi.separator-style: solid
+rofi.hide-scrollbar: true
