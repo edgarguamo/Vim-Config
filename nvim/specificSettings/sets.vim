@@ -31,10 +31,8 @@ set foldlevel=99
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+filetype on
+filetype plugin indent on
 
-" indent/unindent with tab/shift-tab
-nmap <Tab> >>
-nmap <S-tab> <<
-imap <S-Tab> <Esc><<i
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+
+
